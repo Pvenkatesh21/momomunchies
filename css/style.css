@@ -1,0 +1,35 @@
+
+:root{--orange:#E76F1E;--green:#556B2F;--cream:#F8F2E8;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:var(--cream)}
+body.dark{background:#111;color:#fff}
+.navbar{position:sticky;top:0;background:#fff;display:flex;justify-content:space-between;align-items:center;padding:10px 5%;z-index:1000}
+.logo{height:70px}
+.navbar ul{display:flex;gap:20px;list-style:none}
+.navbar a{text-decoration:none;color:#333}
+.hero{height:90vh;background:url('../images/hero-thali.png') center/cover no-repeat;display:flex;align-items:center;position:relative}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.5)}
+.hero-content{position:relative;color:white;padding-left:8%;max-width:650px}
+.hero h1{font-size:4.5rem}
+.offer{background:var(--green);padding:12px;border-radius:10px;margin:15px 0}
+.btn{display:inline-block;background:var(--orange);color:#fff;padding:12px 20px;border-radius:30px;text-decoration:none;margin:5px}
+.btn-green{background:var(--green)}
+section{padding:70px 5%}
+h2{text-align:center;margin-bottom:30px}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:rgba(255,255,255,.5);backdrop-filter:blur(12px);border-radius:20px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.15);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card h3,.card p{padding:10px 15px}
+.featured{border:3px solid var(--orange)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.features img{width:100%}
+#reviewBox{max-width:700px;margin:auto;background:white;padding:30px;border-radius:15px;text-align:center}
+.contact{text-align:center;background:#f3efe6}
+.floating{position:fixed;right:20px;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:24px}
+.whatsapp{bottom:20px;background:#25D366}
+.call{bottom:90px;background:var(--orange)}
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;display:flex}
+.sticky-bar a{flex:1;text-align:center;padding:15px;background:var(--orange);color:white;text-decoration:none}
+.sticky-bar a:last-child{background:var(--green)}
+@media(max-width:768px){.hero h1{font-size:3rem}.navbar ul{display:none}}
